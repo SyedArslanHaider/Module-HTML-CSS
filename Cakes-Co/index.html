@@ -6,11 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
     <!-- Add a link to your css file here -->
 </head>
-
 <body>
     <!-- Add your markup here -->
-</body>
+    <header>
+        <div class="header_div">
+        <img src="https://static.vecteezy.com/system/resources/previews/022/228/585/non_2x/sweet-cupcake-with-cherry-free-png.png" width="120px">
+        <h1>The best Cakes in town deliver to your door</h1>
+        <img src="https://img.icons8.com/?size=100&id=59832&format=png&color=000000" alt="Burger" class="burger-image" id="burger-icon">
+        </div>
+        <nav id="nav-menu" class="hidden">
+            <ul>
+            <li>HOME</li>
+            <li>CAKES</li>
+            <li>ORDERIN</li>
+            <li>LESSON</li>
+            <li>ABOUT</li>
+            </ul>
+        </nav>
+    </header>
+   <main>
+    <section class="main_sec_one">
+     <img src="https://images.pexels.com/photos/2144200/pexels-photo-2144200.jpeg?cs=srgb&dl=pexels-quang-nguyen-vinh-222549-2144200.jpg&fm=jpg" alt="sec1img">
+     <div class="section_one_details">
+        <p>Welcome</p>
+        <p>Cake symbolizes joy, love, appreciation, and even accomplishments. It is served during weddings, birthdays, and many
+        different party settings. The cakes are almost always made to honor or mean something to the recipient.</p>
+     </div>
+    </section>
+         <h2>Our Specialities</h2>
+    <section class="main_sec_2nd">
+        <div class="grid-item">
+        <img src="https://flowera.in/uploads/tempDir/Heart-Shape-Red-velvet-cake-600X600.webp" alt="img1">
+        </div>
+        <div class="grid-item">
+        <img src="https://www.dpsainiflorist.com/wp-content/uploads/2023/04/DP3028.jpg" alt="img2">
+        </div>
+        <div class="grid-item">
+        <img src="https://dy9wzeeht8myy.cloudfront.net/images/catalog/Cakes/CH512-600x600.jpg" alt="img3">
+        </div>
+        <div class="grid-item">
+        <img src="https://dy9wzeeht8myy.cloudfront.net/images/catalog/flowers/CH296-600x600.jpg" alt="img4">
+        </div>
+    </section>
 
+    <section class="form-container">
+            <div class="form-image">
+                <img src="https://us.images.westend61.de/0000896827pw/woman-choosing-cake-in-bakery-FOLF05974.jpg" alt="Form Image">
+            </div>
+            <div class="form-content">
+                <h1>Order your cake today</h1>
+                <p>Please fill in the details below:</p>
+                <form action="#">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+        
+                    <label for="options">Choose an option:</label>
+                    <select id="options" name="options">
+                        <option value="option6">Please choose an option</option>
+                        <option value="option1">friends and family </option>
+                        <option value="option2">facebook</option>
+                        <option value="option3">instagram</option>
+                        <option value="option4">youtube</option>
+                        <option value="option6">others</option>
+                    </select>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+    </section>
+   </main>
+<footer class="footer">
+    <div class="social-icons">
+        <a href="https://facebook.com">
+        <img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="Facebook">
+        </a>
+        <a href="https://instagram.com">
+        <img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="Instagram">
+        </a>
+        <a href="https://twitter.com">
+        <img src="https://img.icons8.com/?size=100&id=5MQ0gPAYYx7a&format=png&color=000000" alt="Twitter">
+        </a>
+    </div>
+    <p>&copy; 2024 Syed. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
 </html>
