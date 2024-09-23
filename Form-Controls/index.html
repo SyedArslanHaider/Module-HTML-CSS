@@ -1,28 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My form exercise</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Product Pick</h1>
-  </header>
-  <main>
-  <form>
-    <!-- write your html here-->
-    <!-- try writing out the requirements first-->
-  </form>
-
-  </main>
-  <footer>
-    <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
-  </footer>
-</body>
-
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My form exercise</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="https://img.icons8.com/?size=100&id=85059&format=png&color=000000" alt="phone_img">
+      <span>+34 661275235 |</span> 
+      <span>arslanhaider231@gmail.com</span>
+    </header>
+    <main>
+      <form>
+        <img src="https://www.tshirtstore.es/static/images/Logo-para-web-tss-resize.jpg" alt="img">
+        <!-- write your html here-->
+        <!-- try writing out the requirements first-->
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          name="name"
+          required
+          title="Please enter a valid name with at least 3 characters"
+          pattern="[A-Za-z\s]{3,}"
+        />
+        <br />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          required
+          title="Please enter a valid email address"
+        />
+        <br />
+        <label for="color">Choose a color:</label>
+        <select id="color" name="color" required>
+          <option value="black">Black</option>
+          <option value="white">white</option>
+          <option value="red">Red</option>
+          <option value="pink">Pink</option>
+          <option value="grey">Grey</option>
+        </select>
+        <br />
+        <label for="size">Choose a size:</label>
+        <select id="size" name="size" required>
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
+          <option value="xll">XXL</option>
+        </select>
+       <br>
+       <label for="date">Preferred delivery date:</label>
+       <input type="date" name="date" required>
+       <br>
+       <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <p>&copy;2024 SYED. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/yourprofile" target="_blank">Facebook <img src=""></a>
+        <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>
+        <a href="https://www.twitter.com/yourprofile" target="_blank">Twitter</a>
+      </div>
+    </footer>
+  </body>
 </html>
