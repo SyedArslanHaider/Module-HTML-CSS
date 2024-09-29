@@ -1,3 +1,20 @@
 /* Add your CSS here */
-
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: Quicksand;
+    src: url(/MultiPage-Clone/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+    font-family: poppins;
+    src: url(MultiPage-Clone/fonts/poppins);
+}
 /* Dont' forget to link this file to your HTML in the <head> */
+:root {
+ --clr-Dark-beige:#E6DACD;
+ --clr-Light-beige:#F4ECE6;
+ --clr-Royal-blue:#0150FD;
+ --clr-Black:#000;
+ --clr-White:#FFF;
+}
+
