@@ -465,5 +465,21 @@ footer {
 }
 
 @media screen and (max-width: 400px) {
-  
+    footer {
+        margin-top: 250px;
+        padding: 15px;
+    }
+
+    .fot-right {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .fot-right .third {
+        grid-column: auto;
+    }
+
+    .fot-right p {
+        font-size: 0.8rem;
+    }
 }
