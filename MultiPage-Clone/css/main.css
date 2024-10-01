@@ -111,6 +111,9 @@ ul {
 /* ...... header section media queries.......*/
 
 @media screen and (max-width: 768px) {
+  nav {
+    position: relative;
+  }
   .nav-links {
     display: none;
     position: absolute;
@@ -330,7 +333,7 @@ main {
   .right-side {
     display: none;
   }
-  .inner-left{
+  .inner-left {
     width: 100%;
     height: auto;
     padding: 1rem;
@@ -340,13 +343,15 @@ main {
     width: 95%;
     height: auto;
     left: 5%;
-    top: 25%;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .inner-right {
+    width: 100%;
+    height: auto;
     margin-top: 1rem;
     background-color: var(--clr-Dark-beige);
     text-align: center;
@@ -355,7 +360,7 @@ main {
     width: 100%;
     flex-direction: column;
     justify-content: center;
-    padding: 1.5rem;
+    padding: 1rem;
   }
   .para p {
     letter-spacing: 1px;
@@ -385,9 +390,9 @@ footer {
   font-family: Quicksand;
   font-size: 0.8rem;
 }
-.fot-right span{
-font-family: Quicksand;
-font-size: 0.8rem;
+.fot-right span {
+  font-family: Quicksand;
+  font-size: 0.8rem;
 }
 .fot-right {
   display: flex;
@@ -417,25 +422,42 @@ font-size: 0.8rem;
 
 /* ....... footer media Queries ........*/
 @media screen and (max-width: 768px) {
-  footer {
-    width: 100%;
-    flex-direction: column-reverse;
-    height: auto;
-    margin-top: 260px;
-  }
-  .fot-left {
-    margin: 0;
-    padding: 10px;
-  }
-  .fot-right {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
-      gap: 2rem;  
-      justify-items: flex-start;
-  }
+    footer {
+        width: 100%;
+        flex-direction: column-reverse;
+        height: auto;
+    }
 
-  .fot-right .third {
-      grid-column: 1 / span 2;
-  }
+    .fot-left {
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .fot-right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
+        align-items: center;
+        justify-items: center;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .fot-right .one,
+    .fot-right .second {
+        grid-column: auto;
+    }
+
+    .fot-right .third {
+        grid-column: 1 / span 2;
+        justify-self: center;
+    }
+
+    .fot-right p {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
 }
