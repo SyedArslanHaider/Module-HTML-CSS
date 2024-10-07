@@ -439,6 +439,18 @@ footer {
     font-size: 0.9rem;
   }
 }
+@media screen and (max-width: 400px) {
+  .top-paragraph {
+    height: 200px;
+  }
+  .main-container {
+    gap: 1rem;
+  }
+
+  .project-text span {
+    font-size: 1.5rem;
+  }
+}
 
 @media screen and (max-width: 400px) {
   footer {
