@@ -12,3 +12,11 @@ burgerr.addEventListener("click", () => {
     body.style.overflow = "auto";
   }
 });
+
+function openPage(buttonId){
+  if(buttonId === 'btn-resume'){
+    window.location.href = "resume.html";
+  }else if(buttonId === 'btn-project'){
+    window.location.href ='project.html'
+  }
+}
