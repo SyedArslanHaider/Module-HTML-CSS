@@ -1,10 +1,11 @@
-const burgerr = document.querySelector(".navimage");
+const burger = document.querySelector(".navimage");
 const nav = document.querySelector(".nav-links");
 const body = document.querySelector("body");
+const navLinks = document.querySelectorAll('.nav-links a');
 
-burgerr.addEventListener("click", () => {
+burger.addEventListener("click", () => {
   nav.classList.toggle("nav-active");
-  burgerr.classList.toggle("toggle");
+  burger.classList.toggle("toggle");
 
   if (nav.classList.contains("nav-active")) {
     body.style.overflow = "hidden";

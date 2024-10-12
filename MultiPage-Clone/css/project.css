@@ -18,6 +18,7 @@
   --clr-Royal-blue: #0150fd;
   --clr-Black: #000;
   --clr-White: #fff;
+  --clr-lite-black: rgba(0, 0, 0, 0.2);
 }
 
 nav {
@@ -268,7 +269,7 @@ ul {
   .container{
     background-color: var(--clr-White);
     border-radius: 3px;
-    box-shadow: 0 1px 1px var(--clr-Black);
+    box-shadow: 0 4px 8px var(--clr-lite-black);
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 750px;
@@ -401,7 +402,7 @@ ul {
   .container {
     background-color: var(--clr-White);
     border-radius: 3px;
-    box-shadow: 0 1px 1px var(--clr-Black);
+    box-shadow: 0 4px 8px var(--clr-lite-black);
     width: 300px;
     height: 490px;
     display: flex;
